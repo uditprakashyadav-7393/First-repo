@@ -3,6 +3,7 @@
 A small personal repository used as a learning playground to try out different Git, GitHub, and development features.
 
 Status: Experimental — actively used for practice and learning.
+🌏[Live App]()
 
 ## What this repository is for
 - Experimenting with Git and GitHub workflows (branches, commits, PRs).
