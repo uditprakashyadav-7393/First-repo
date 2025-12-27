@@ -1,1 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My First Repo</title>
+  <meta name="description" content="A simple starter page for my first GitHub repository." />
 
+  <style>
+    :root {
+      --accent: #0b5fff;
+      --muted: #6b7280;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --radius: 10px;
+    }
+    html,body {
+      height: 100%;
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg, var(--bg), #eef2ff);
+      color: #0f172a;
+    }
+    .container {
+      max-width: 900px;
+      margin: 48px auto;
+      padding: 24px;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .brand {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
+    }
+    .logo {
+      width: 44px;
+      height: 44px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, var(--accent), #7c3aed);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 700;
+    }
+    nav a {
+      margin-left: 12px;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: 0 6px 18px rgba(12, 21, 45, 0.06);
+      margin-top: 24px;
+    }
+    h1 {
+      margin: 0 0 8px 0;
+      font-size: 1.8rem;
+    }
+    p.lead {
+      margin: 0 0 16px 0;
+      color: var(--muted);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+    .feature {
+      padding: 12px;
+      border-radius: 8px;
+      background: linear-gradient(180deg, rgba(11,95,255,0.03), rgba(124,58,237,0.02));
+      border: 1px solid rgba(11,95,255,0.06);
+    }
+    footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      text-align: center;
+    }
+    .btn {
+      background: var(--accent);
+      color: white;
+      padding: 8px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    @media (max-width:600px) {
+      header { flex-direction: column; align-items: flex-start; gap: 8px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a class="brand" href="#">
+        <div class="logo">FR</div>
+        <div>
+          <div style="font-weight:700">First-repo</div>
+          <div style="font-size:0.85rem;color:var(--muted)">by uditprakashyadav-7393</div>
+        </div>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="card" role="main">
+      <h1>Welcome to my first GitHub repository</h1>
+      <p class="lead">A simple starter page to introduce the project. Clone, edit, and make it your own!</p>
+
+      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <a class="btn" href="https://github.com/uditprakashyadav-7393/First-repo" target="_blank" rel="noopener">View repo on GitHub</a>
+        <a class="btn" href="#" style="background:#e6eefc;color:var(--accent)">Get started</a>
+      </div>
+
+      <section id="about" style="margin-top:22px">
+        <h2 style="margin:10px 0 6px 0">About</h2>
+        <p class="lead">This repo is a place to learn and experiment with HTML, CSS, and small JavaScript snippets. Use this page as your project's README-with-style.</p>
+      </section>
+
+      <section id="features">
+        <h2 style="margin:14px 0 8px 0">Features</h2>
+        <div class="grid" aria-hidden="false">
+          <div class="feature">
+            <strong>Simple structure</strong>
+            <p style="margin:8px 0 0 0;color:var(--muted)">Clean HTML/CSS that is easy to edit and extend.</p>
+          </div>
+          <div class="feature">
+            <strong>Responsive</strong>
+            <p style="margin:8px 0 0 0;color:var(--muted)">Looks fine on phones and desktops.</p>
+          </div>
+          <div class="feature">
+            <strong>Starter scripts</strong>
+            <p style="margin:8px 0 0 0;color:var(--muted)">Small JavaScript snippet below to show the current year.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <p>Made with ❤️ by uditprakashyadav-7393 — <span id="year"></span></p>
+    </footer>
+  </div>
+
+  <script>
+    // Small helper script: set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Optional: friendly console message for contributors
+    console.log('Hello! You are viewing First-repo. Happy coding! 🚀');
+  </script>
+</body>
+  </html>
