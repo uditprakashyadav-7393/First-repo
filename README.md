@@ -3,7 +3,7 @@
 A small personal repository used as a learning playground to try out different Git, GitHub, and development features.
 
 Status: Experimental — actively used for practice and learning.
-🌏[Live App](https://uditprakashyadav-7393.github.io/First-repo/.)
+🌏[Live App](https://github.com/uditprakashyadav-7393/First-repo.)
 
 ## What this repository is for
 - Experimenting with Git and GitHub workflows (branches, commits, PRs).
